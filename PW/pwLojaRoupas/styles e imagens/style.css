@@ -1,0 +1,261 @@
+/* 
+GERAL 
+-----------------------------------------------------------------------------------------------------------------------
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;0,400;0,500;1,200&display=swap');
+
+*{
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgb(17, 17, 17);
+    color: rgb(255, 255, 255);
+}
+
+.icone{ 
+    min-height: 3rem;
+    min-width: 3rem;
+    max-width: 12rem;
+    max-height: 12rem;
+    margin-top: 2rem;
+}
+
+.icon-tri{
+    height: 2vh;
+}
+
+.icon-tri::after , .icon-tri::before{
+    position: absolute;
+    content: '';
+    width: 2.5vh;
+    height: 2.5vh;
+    top: 1;
+    bottom: 1;
+    background: rgb(17, 17, 17);
+    z-index: 100;
+}
+
+.icon-tri::before{
+    right: 50%;
+    transform: skew(0, 30deg);
+}
+
+.icon-tri::after{
+    transform: skew(0, -30deg);
+}
+
+.menu{ 
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 7.5vh;
+    font-weight: 400;
+    font-size: 1rem;
+    padding: 2rem;
+    background-color: rgb(58, 58, 58);
+}
+
+.menu input[type="button"]{
+    width: 3fr;
+    height: 3rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+    letter-spacing: 1.2px;
+    cursor: pointer;
+    color: #f3ebeb;
+    background-color: rgb(58, 58, 58);
+    transition: cubic-bezier(0.23, 1, 0.55, 1) 750ms;
+}
+
+.menu input[type="button"]:hover{
+    color: #2f2f2f;
+    background-color: rgba(255, 247, 232, 0.856);
+    letter-spacing: 2px;
+}
+
+.menu a {text-decoration: none}
+
+.container{
+    display: flex;
+    width: 80%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    min-height: 100vh;
+    background-color: white;
+    color: black;
+}
+
+.container .produto{
+    background-color: rgb(255, 255, 255);
+    width:  25vh;
+    height: 37vh;
+    font-size: 3vh;
+    padding: 1rem;
+    margin: 2rem;
+    box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.425);
+    transition: ease-out 400ms;
+}
+
+.container .produto:hover{
+    transform: rotate(-7.5deg);
+}
+
+.produto img{
+    width: 100%;
+    height: 70%;
+}
+
+.produto div{
+    padding: 0.2vh;
+    text-align: center;
+    justify-content: center;
+    color: rgb(32, 32, 32);
+}
+
+.produto:first-child{
+    margin-top: 3rem;
+}
+
+.BTN_verMais{
+    width: 50%;
+    min-height: 3vh;
+    max-height: 5vh;
+    background-color: #2f2f2f;
+    color: white;
+    border-radius: 8px;
+    padding: 1vh;
+    margin: 2rem;
+    font-weight: 500;
+    font-style: italic;
+    letter-spacing: 0.3vw;
+    cursor: pointer;
+    transition: cubic-bezier(0.165, 0.84, 0.44, 1) 1000ms;
+}
+
+.BTN_verMais:hover{
+    letter-spacing: 1vw;
+    background-color: #ccc1c1;
+    color: #000;
+    font-weight: 700;
+}
+
+footer{
+    height: 7vh;
+}
+
+/*
+PAGINA LOGIN
+---------------------------
+*/
+
+.loginContainer{
+    height: 60vh;
+    width: 60vw;
+    background-color: #4a4a4a;
+}
+
+.inputs-Container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 60vw;
+    height: 52vh;
+}
+
+.loginInp{
+    width: 30vw;
+    height: 5vh;
+    margin-bottom: 5vh;
+    text-align: center;
+}
+
+.loginInp input[type="text"]{
+    background-color: #4a4a4a;
+    border-radius: 2rem;
+    padding: 1.3vh;
+    width: 100%;
+    box-shadow:5px -10px 10px rgba(0, 0, 0, 0.425);
+    transition: cubic-bezier(0.645, 0.045, 0.355, 1) 450ms;
+    color:#a0a0a0
+}
+
+.loginInp input[type="text"]::placeholder{
+    color: #a0a0a0;
+}
+
+.loginInp input[type="submit"]{
+    background-color: #4a4a4a;
+    color: white;
+    border-radius: 2rem;
+    padding: 1.3vh;
+    width: 100%;
+    box-shadow:5px -10px 10px rgba(0, 0, 0, 0.425);
+    transition: cubic-bezier(0.645, 0.045, 0.355, 1) 450ms;
+}
+
+
+.loginInp input[type="text"]:focus, .loginInp input[type="submit"]:hover{
+    background-color: #e1e1e1;
+    color: #2f2f2f;
+    width: 100%;
+    box-shadow:5px 15px 15px rgba(0, 0, 0, 0.425);
+}
+
+/*
+    SOBRE NÓS
+-------------------------------
+*/
+
+.about{
+    margin-top: 1vh;
+    padding: 1rem ;
+    height: 10vh;
+    width: 70%;
+    font-size: 2em;
+    font-weight: 700;
+    font-style: italic;
+    border-bottom: #2f2f2f double 0.7vh;
+    text-align: center;
+}
+
+.us{
+    margin-top: 1vh;
+    width: 60%;
+    height: 60%;
+    font-size: 1rem;
+    font-weight: 500; 
+    text-align: justify;
+}
+
+.us p{
+    margin: 1.5rem;
+}
+
+#indisponivel{
+    width: 60%;
+    font-size: 3vh;
+}
+#indisponivel p{
+    margin: 1vh;
+}
+#indisponivel p:last-child{
+    border-top: #4a4a4a 0.7vh double;
+    padding: 0.5vh 0px 0px 17vw;
+    margin-top: 2.3vh;
+}

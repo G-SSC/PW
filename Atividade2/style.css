@@ -1,0 +1,40 @@
+header
+  {
+  text-align: center;
+  }
+article,header,footer
+  {
+  padding: 10px;
+  margin: 10px;
+  border:solid;
+  border-radius: 10px;
+  border-color: rgb(0, 70, 117);
+  box-shadow: 3px 3px 1px #0000006c;
+  }
+.card 
+  {
+	width: 200px;
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  display: inline-block;
+  }
+
+/* On mouse-over, add a deeper shadow */
+.card:hover 
+  {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+
+/* Add some padding inside the card container */
+.container 
+  {
+  padding: 2px 16px;
+  display: inline-block;
+  text-align:center;
+  }
+footer
+  {
+  display: contents;
+  height: 100px;
+	}
